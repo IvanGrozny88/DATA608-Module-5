@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Reverse a word</h2>
+
+<input type="text" id="input_word" placeholder="Type a word...">
+<button onclick="reverseWord()">Reverse</button>
+
+<p id="output_word"></p>
+
+<script>
+function reverseWord() {
+  var input = document.getElementById("input_word").value;
+  var output = "";
+  for (var i = input.length - 1; i >= 0; i--) {
+    output += input[i];
+  }
+  document.getElementById("output_word").innerHTML = output;
+}
+</script>
+
+</body>
+</html>
